@@ -1,0 +1,20 @@
+<html>
+    <head><title>crud operation postgresql</title></head>
+<body>
+    <h1>hello</h1>
+    <table>
+        <tr>
+            <th>employee id</th>
+            <th>employee name</th>
+            <th>email</th>    
+        </tr>
+{% for result in data %}
+<tr>
+    <td>{{result.id}}</td>
+    <td>{{result.ename}}</td>
+    <td>{{result.email}}</td>
+</tr>
+{% endfor %}
+    </table>
+</body>
+    </html>

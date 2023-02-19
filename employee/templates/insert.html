@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+        <table>
+                <tr>
+                    <td>Employee name</td><td><input type="text" placeholder="enter employee name" name="ename"></td><br>
+                   
+                </tr>
+                <tr>
+                    <td>Employee email</td><td><input type="email" name="email" placeholder="enter employee email"></td>
+                </tr>
+                <tr>
+                    <input type="submit">    
+            
+                </tr>
+            
+        </table>
+        {%if messages %}
+        {% for message in messages %}
+        {%endfor%}
+        {% endif %}
+    </form>
+            
+    </body>
+</html>
